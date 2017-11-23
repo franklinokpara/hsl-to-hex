@@ -1,11 +1,30 @@
 {
-  "name": "hsl-to-hex",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@macfrankie/hsl-to-hex",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
   "author": " <Franklin Okpara>",
-  "license": "MIT"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macfrankiee/hsl-to-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/macfrankiee/hsl-to-hex/issues"
+  },
+  "homepage": "https://github.com/macfrankiee/hsl-to-hex#readme",
+  "description": "Convert HSL colors to RGB colors in hex format .",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tap": "^10.7.3"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
