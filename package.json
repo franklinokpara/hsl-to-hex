@@ -1,11 +1,12 @@
 {
   "name": "@macfrankie/hsl-to-hex",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm ls && npm test",
+    "check": "npm ls && npm test",
     "test": "npm run lint && tap --cov test",
-    "lint": "standard"
+    "lint": "standard",
+    "prepublish": "npm run check && ./publish-dep. sh"
   },
   "author": " <Franklin Okpara>",
   "license": "ISC",
@@ -21,7 +22,8 @@
   "dependencies": {
     "clockface": "^1.1.1",
     "debug": "^3.1.0",
-    "hsl-to-rgb-for-reals": "^1.1.0"
+    "hsl-to-rgb-for-reals": "^1.1.0",
+    "stay-cli": "^0.1.1"
   },
   "devDependencies": {
     "standard": "^10.0.3",
