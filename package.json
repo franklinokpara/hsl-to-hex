@@ -1,9 +1,9 @@
 {
   "name": "@macfrankie/hsl-to-hex",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
-    "prepublish":"npm ls && npm test",
+    "prepublish": "npm ls && npm test",
     "test": "npm run lint && tap --cov test",
     "lint": "standard"
   },
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/macfrankiee/hsl-to-hex#readme",
   "description": "Convert HSL colors to RGB colors in hex format .",
   "dependencies": {
+    "clockface": "^1.1.1",
     "debug": "^3.1.0",
     "hsl-to-rgb-for-reals": "^1.1.0"
   },
