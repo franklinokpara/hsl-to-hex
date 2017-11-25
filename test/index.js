@@ -14,7 +14,7 @@ test('pure white', ({is, end}) => {
 
 test('medium gray', ({is, end}) => {
   const expected = '#808080'
-  const actual = hsl (0, 0, 50)
+  const actual = hsl(0, 0, 50)
   const it = `
      0% saturation, 50% luminosity should be medium gray
    `
@@ -24,18 +24,17 @@ test('medium gray', ({is, end}) => {
 
 test('hue', ({is, end}) => {
   {
-      const expected = '#ff0000'
-      const actual = hsl (0, 100, 50)
-      const it = `
+    const expected = '#ff0000'
+    const actual = hsl(0, 100, 50)
+    const it = `
           Odeg should be red
         `
-      is(actual, expected, it)
-        
+    is(actual, expected, it)    
     }
     {
-      const expected = '#0000ff'
-      const actual = hsl (240, 100, 50)
-      const it = `
+    const expected = '#0000ff'
+    const actual = hsl (240, 100, 50)
+    const it = `
           240deg should be blue
         `
       is(actual, expected, it)
@@ -75,23 +74,22 @@ test('degree overflow/underflow', ({is, end}) => {
 
 
 
- test('max constarint', ({is, end}) => {
-    {
-        const expected = hsl(0, 101, 50)
-        const actual = hsl (0, 100, 50)
-        const it = `
+  test('max constarint', ({is, end}) => {
+     {
+      const expected = hsl(0, 101, 50)
+      const actual = hsl(0, 100, 50)
+      const it = `
           101% should be the same as 100%
         `
         is(actual, expected, it)
-    
-  }
-  {
-      const expected = hsl(0, -1, 50)
-      const actual = hsl(0, 0, 50)
-      const it = `
+    }
+   {
+     const expected = hsl(0, -1, 50)
+     const actual = hsl(0, 0, 50)
+     const it = `
           -1% should be the same
         `
-      is(actual, expected, it)
-  }
-  end()
- })  
+     is(actual, expected, it)
+   }
+    end()
+  })  
